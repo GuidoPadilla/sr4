@@ -201,7 +201,7 @@ class Render(object):
             else:
                 points.append([x/self.wvp, y/self.hvp])
 
-            offset += (dy/dx) * 2 * dx
+            offset += (dy) * 2
             if offset >= threshold:
                 y += 1 if y0 < y1 else -1
                 threshold += 1 * 2 * dx
